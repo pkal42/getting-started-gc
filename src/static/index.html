@@ -46,5 +46,24 @@
     </footer>
 
     <script src="app.js"></script>
+    <script>
+      // Dynamically populate participants in activity cards
+      document.addEventListener("DOMContentLoaded", () => {
+        const activitiesList = document.getElementById("activities-list");
+        // Example structure for dynamically loaded activity cards
+        activitiesList.innerHTML = `
+          <div class="activity-card">
+            <h4>Chess Club</h4>
+            <p>Learn strategies and compete in chess tournaments</p>
+            <p><strong>Schedule:</strong> Fridays, 3:30 PM - 5:00 PM</p>
+            <p><strong>Participants:</strong></p>
+            <ul class="participants-list">
+              <li>michael@mergington.edu</li>
+              <li>daniel@mergington.edu</li>
+            </ul>
+          </div>
+        `;
+      });
+    </script>
   </body>
 </html>
